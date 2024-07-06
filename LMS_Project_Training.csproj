@@ -2157,6 +2157,9 @@
     <Content Include="fontawesome\svgs\solid\z.svg" />
     <Content Include="Global.asax" />
     <Content Include="LogoImg\logoIcon.ico" />
+    <Content Include="SlideImg\lms3.jpeg" />
+    <Content Include="SlideImg\lms2.jpg" />
+    <Content Include="SlideImg\lms1.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
