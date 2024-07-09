@@ -1,10 +1,10 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="LMS_Project_Training.Site1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="LMS_Project_Training.SignUp" %>
 
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Library</title>
+    <title></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -27,10 +27,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-    <asp:ContentPlaceHolder ID="head" runat="server"> </asp:ContentPlaceHolder>
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -67,7 +63,7 @@
                 </div>
                 <%-- Navbar Right icon --%>
                 <div class="pmp-navbar-right-icon ml-auto">
-                    <a class="btn btn-sm btn-primary" href="SignUp.aspx">Sign Up</a>
+                    <%--<a class="btn btn-sm btn-primary" href="#">Sign Up</a>--%>
                     <a class="btn btn-sm btn-primary" href="Login.aspx">Sign In</a>
                 </div>
             </nav>
@@ -80,10 +76,7 @@
                 <div class="row">
                     <div class="col-sm-2 border border-info">
                         <h2>Filter</h2>
-                        <h5>Category:</h5>
-                        <div class="fakeimg">Fake Image</div>
-                        <p>sdgcdskh dsbdckm dsyubckdsyvc ysugdkdb...</p>
-                        <h3>Some Links</h3>
+
                         <p>Top Search.</p>
                         <ul class="navbar nav-pills flex-column">
                             <li class="nav-item">
@@ -102,8 +95,7 @@
                         <hr class="d-sm-none" />
                     </div>
                     <div class="col-sm-10 border border-info">
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                        </asp:ContentPlaceHolder>
+                        <%--Write your code here--%>
                     </div>
                 </div>
             </div>
@@ -154,7 +146,5 @@
 
         </div>
     </form>
-
-
 </body>
 </html>
