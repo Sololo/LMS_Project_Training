@@ -6,6 +6,7 @@
 <head runat="server">
     <title></title>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="LogoImg/logoIcon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="fontawesome/css/all.css" rel="stylesheet" />
@@ -96,6 +97,206 @@
                     </div>
                     <div class="col-sm-10 border border-info">
                         <%--Write your code here--%>
+
+                        <%-- Login screen--%>
+
+                        <div class="container mt-3">
+                            <h2>Create New account</h2>
+                            <br />
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#signup">Sign Up</a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="signup" class="container tab-pane active">
+                                    <br />
+                                    <h3>Sign Up</h3>
+                                    <p></p>
+                                    <%--design login form--%>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 mx-auto">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <center>
+                                                                <img width="150" src="LogoImg/Sign Up.png" />
+                                                            </center>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <center>
+                                                                    <h3>Member/User Sign Up</h3>
+                                                                </center>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <hr />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <label>Member ID</label>
+                                                                <div class="form-group">
+                                                                    <asp:TextBox ID="txtMemberID" CssClass="form-control" placeholder="Member ID" runat="server"></asp:TextBox>
+                                                                </div>
+
+                                                                <label>Password</label>
+                                                                <div class="form-group">
+                                                                    <asp:TextBox ID="txtPassword" CssClass="form-control" placeholder="Password" TextMode="Password" runat="server"></asp:TextBox>
+                                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*enter valid password" ControlToValidate="txtPassword" Display="Dynamic" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                                                </div>
+
+                                                                <label>Full Name</label>
+                                                                <div class="form-group">
+                                                                    <asp:TextBox ID="txtFullName" CssClass="form-control" placeholder="Full Name" runat="server"></asp:TextBox>
+                                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*enter full name" ControlToValidate="txtFullName" Display="Dynamic" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                                                </div>                                                                                                                              
+                                                              
+                                                                <%--<div class="form-group">
+                                                                    <a href="SignUp.aspx">
+                                                                        <input type="button" class="btn btn-info btn-lg btn-block" value="Sign Up" /></a>
+                                                                </div>--%>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <label>Date of Birth</label>
+                                                                <div class="form-group">
+                                                                    <asp:TextBox ID="txtDOB" CssClass="form-control" placeholder="DOB" TextMode="Date" runat="server"></asp:TextBox>
+                                                                </div>
+
+                                                                <label>Contact No.</label>
+                                                                <div class="form-group">
+                                                                    <asp:TextBox ID="txtContactNO" CssClass="form-control" placeholder="Contact No." runat="server"></asp:TextBox>
+                                                                </div>
+
+                                                                <label>EmailID</label>
+                                                                <div class="form-group">
+                                                                    <asp:TextBox ID="txtEmail" CssClass="form-control" placeholder="Email" TextMode="Email" runat="server"></asp:TextBox>
+                                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*enter valid email address" ControlToValidate="txtEmail" Display="Dynamic" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="enter valid email address" ControlToValidate="txtEmail" Display="Dynamic" ForeColor="#CC0099" SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <label>Province</label>
+                                                                <div class="form-group">
+                                                                    <asp:DropDownList ID="ddlProvince" CssClass="form-control" runat="server">
+                                                                        <asp:ListItem Text="Select" Value="Select"></asp:ListItem>
+                                                                        <asp:ListItem Text="Eastern Cape" Value="Eastern Cape" />
+                                                                        <asp:ListItem Text="Free State" Value="Free State" />
+                                                                        <asp:ListItem Text="Gauteng" Value="Gauteng" />
+                                                                        <asp:ListItem Text="KwaZulu-Natal" Value="KwaZulu-Natal" />
+                                                                        <asp:ListItem Text="Limpopo" Value="Limpopo" />
+                                                                        <asp:ListItem Text="Mpumalanga" Value="Mpumalanga" />
+                                                                        <asp:ListItem Text="North West" Value="North West" />
+                                                                        <asp:ListItem Text="Northern Cape" Value="Northern Cape" />
+                                                                        <asp:ListItem Text="Western Cape" Value="Western Cape" />
+                                                                    </asp:DropDownList>
+
+                                                                </div>
+
+                                                                <label>City</label>
+                                                                <div class="form-group">
+                                                                    <asp:TextBox ID="txtCity" CssClass="form-control" placeholder="City" runat="server"></asp:TextBox>
+                                                                </div>
+
+                                                                <label>PIN</label>
+                                                                <div class="form-group">
+                                                                    <asp:TextBox ID="txtPIN" CssClass="form-control" placeholder="PIN CODE" runat="server"></asp:TextBox>
+                                                                </div>
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-1">
+                                                                <label>Full Address</label>
+                                                                <div class="form-group">
+                                                                    <asp:TextBox ID="txtAddress" CssClass="form-control" placeholder="Address" runat="server"></asp:TextBox>
+                                                                </div>
+                                                            </div>                                                          
+                                                        </div>
+                                                        <div class="row">
+                                                                  <div class="col-3">
+                                                                      <div class="form-group">
+                                                                          <asp:Button ID="btnSignup" CssClass="btn btn-success btn-lg btn-block" runat="server" Text="Sign Up" OnClick="btnSignup_Click" />
+                                                                      </div>
+                                                                  </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#"><< Back to Home screen</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!---design end--->
+
+                                </div>
+                                <div id="menu1" class="container tab-pane fade">
+                                    <br />
+                                    <h3>Admin Login</h3>
+                                    <p></p>
+                                    <%--design admin login form--%>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6 mx-auto">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <center>
+                                                                <img width="150" src="LogoImg/admin.png" />
+                                                            </center>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <center>
+                                                                    <h3>Admin Login</h3>
+                                                                </center>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <hr />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <label>Admin ID</label>
+                                                                <div class="form-group">
+                                                                </div>
+
+                                                                <label>Password</label>
+                                                                <div class="form-group">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <asp:Button ID="btnAdminLogin" CssClass="btn btn-success btn-lg btn-block" runat="server" Text="Admin Login" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <a href="SignUp.aspx">
+                                                                        <input type="button" class="btn btn-info btn-lg btn-block" value="Sign Up" /></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#"><< Back to Home screen</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!---design end--->
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!--- End login screen--->
+
                     </div>
                 </div>
             </div>

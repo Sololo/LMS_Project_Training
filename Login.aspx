@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Login</title>
+    <link rel="shortcut icon" href="LogoImg/logoIcon.ico"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -27,6 +28,8 @@
 
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -116,7 +119,7 @@
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 <div id="home" class="container tab-pane active">
-                                    <br>
+                                    <br/>
                                     <h3>User Login</h3>
                                     <p></p>
                                     <%--design login form--%>
@@ -154,7 +157,7 @@
                                                                     <asp:TextBox ID="txtPassword" CssClass="form-control" placeholder="Password" TextMode="Password" runat="server"></asp:TextBox>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <asp:Button ID="btnLogin" CssClass="btn btn-success btn-lg btn-block" runat="server" Text="Login" />
+                                                                    <asp:Button ID="btnLogin" CssClass="btn btn-success btn-lg btn-block" runat="server" Text="Login" OnClick="btnLogin_Click" />
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <a href="SignUp.aspx">
@@ -173,7 +176,7 @@
 
                                 </div>
                                 <div id="menu1" class="container tab-pane fade">
-                                    <br>
+                                    <br/>
                                     <h3>Admin Login</h3>
                                     <p></p>
                                     <%--design admin login form--%>
@@ -211,7 +214,7 @@
                                                                     <asp:TextBox ID="txtAdminPass" CssClass="form-control" placeholder="Password" TextMode="Password" runat="server"></asp:TextBox>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <asp:Button ID="btnAdminLogin" CssClass="btn btn-success btn-lg btn-block" runat="server" Text="Admin Login" />
+                                                                    <asp:Button ID="btnAdminLogin" CssClass="btn btn-success btn-lg btn-block" runat="server" Text="Admin Login" OnClick="btnAdminLogin_Click"/>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <a href="SignUp.aspx">
