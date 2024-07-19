@@ -212,15 +212,15 @@
                                                             </div>                                                            
                                                         </div>
                                                         <div class="row">
-                                                            <div class="col-1">
+                                                            <div class="col-12">
                                                                 <label>Full Address</label>
                                                                 <div class="form-group">
                                                                     <asp:TextBox ID="txtAddress" CssClass="form-control" placeholder="Address" runat="server"></asp:TextBox>
                                                                 </div>
                                                             </div>                                                          
                                                         </div>
-                                                        <div class="row">
-                                                                  <div class="col-3">
+                                                        <div class="row align-content-center">
+                                                                  <div class="col-4">
                                                                       <div class="form-group">
                                                                           <asp:Button ID="btnSignup" CssClass="btn btn-success btn-lg btn-block" runat="server" Text="Sign Up" OnClick="btnSignup_Click" />
                                                                       </div>
